@@ -8,7 +8,7 @@ async function loadImagesFromFolder(folderPath) {
 	let index = 1;
 	
 	for (let i = 0; i < files.length; i++) {
-	  const fileName = files[i].textContent;
+	  const fileName = files[i].textContent.trim();
 	  const fileExtension = fileName.split('.').pop();
 	  if (fileExtension.match(/^(jpe?g|png|gif)$/)) {
 		const image = document.createElement('img');
