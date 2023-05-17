@@ -1,0 +1,13 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - C:\Work\Mihaela-s-Art:/usr/src/app
+      - C:\Work\Mihaela-s-Art\deployment\services\web\nginx\conf.d:/etc/nginx/conf.d
+    ports:
+      - 80:80
+      - 443:443
+
