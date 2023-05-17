@@ -1,0 +1,12 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+#    This one is for debug / troubleshooting. No need in prod.
+#    volumes:
+#      - C:\Work\Mihaela-s-Art:/usr/local/apache2/htdocs
+    ports:
+      - 80:80
+
